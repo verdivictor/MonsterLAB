@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+		button {
+			border-radius: 50px;
+			background: #01bf71;
+			white-space: nowrap;
+			padding: 12px 30px;
+			color: #010606;
+			font-size: 20px;
+			outline: none;
+			border: none;
+			cursor: pointer;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			transition: all 0.2s ease-in-out;
+			margin: 20px;
+		}
+		
+		button:hover{
+			background: #010606;
+			color: #fff;
+			transition: all 0.4s ease-in-out;
+		}
+
+		div#nfts {
+			display: flex;
+			flex-direction: flex-start;
+			align-items: center;
+			justify-content:center;		
+		}		
+		
+		div#buttons {
+			display: flex;
+			flex-direction: flex-start;
+			align-items: center;
+			justify-content:center;
+			margin: 40px;
+		}
+		
+	</style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MonsterLab NFTs</title>
+
+<script type="module" src="Button.js"></script>
+</head>
+<body style="text-align: center; justify-content: center;">
+
+  <main>
+    <div id="buttons">
+		 <button id="connect_button">
+		 		Connect Metamask
+		 	</button>    
+	    	<button id="mint_button">
+	    		Mint
+	    	</button>
+	     <button id="load_button">
+	       	Load NFTs
+	     </button>
+  	  </div>
+	 <div>
+      <div id="nfts"></div>
+    </div>
+  </main>
+
+  <template style="display: flex;"id="nft_template">
+    <section style="margin: 20px;">
+      <h1></h1>
+
+      <a  href="" target="_blank">
+      <div style="height:200px; width: 100%;">
+        <img height="200px" src="" alt="">
+       </div>
+      </a>
+      <div>
+      <p></p>
+      </div>
+    </section>
+  </template>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.0-rc.0/web3.min.js"></script>
+ 
+</body>
+</html>
